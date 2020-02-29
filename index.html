@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Parked Car | Rental Services</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <!-- Add your site or application content here -->      
+        <header>
+	        <div class="burger-nav">
+				<div class="open-slide">
+					<a href="#" onclick="openSlideMenu()">
+						<svg width="30" height="30">
+							<path d="M0,5 30,5" stroke="#ff0000" stroke-width="5"/>
+							<path d="M0,14 30,14" stroke="#ff0000" stroke-width="5"/>
+							<path d="M0,23 30,23" stroke="#ff0000" stroke-width="5"/>
+						</svg>
+					</a>
+					<div class="title">
+						<h1><strong>PARKED</strong> CAR</h1>
+					</div>
+				</div>
+
+				<div id="side-menu" class="side-nav">
+					<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Category</a>
+					<a href="#">Rates</a>
+				</div>
+			</div>
+
+	    	<nav class="navbar">
+	    		<ul class="navbar-nav">
+	    			<li><a href="#">Home</a></li>
+	    			<li><a href="#">About</a></li>
+	    			<li><a href="#">Category</a></li>
+	    			<li><a href="#">Rates</a></li>
+	    		</ul>
+	    	</nav>
+        </header>
+
+
+		<div id="main">
+			<div class="title">
+				<h1><strong>PARKED</strong> CAR</h1>
+				<h2>Rental Services</h2>
+			</div>
+
+			<div class="tagline">
+				<h1>Begin your roadtrip adventure.</h1>
+			</div>
+
+			<div class="book-here">
+				<button type="button" class="book-now">Book Now</button>
+			</div>
+		</div>
+<script>
+	function openSlideMenu(){
+		document.getElementById('side-menu').style.width= '250px' ;
+		//document.getElementById('main').style.marginLeft= '250px' ;
+	}
+
+	function closeSlideMenu(){
+		document.getElementById('side-menu').style.width= '0px' ;
+		//document.getElementById('main').style.marginLeft= '0px' ;
+	}
+</script>
+
+
+
+</body>
+</html>

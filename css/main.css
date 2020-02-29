@@ -1,0 +1,305 @@
+body{
+	background: url(../images/parkedcar-bg.png) no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;
+	font-family: 'roboto';
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.navbar{
+		display: none;
+	}
+
+	#main .title{display: none;}
+	.burger-nav{
+		margin: 20px;
+		position: fixed;
+		top: 0;
+	}
+	svg {vertical-align: middle;}
+	.title {
+		color:#fff;
+		display: inline-block;
+		padding-left: 10px;
+		vertical-align: middle;
+	}
+	.title h1{
+		font-family: 'Roboto Condensed';
+		font-weight: 400;
+	}
+	.title h1 strong{
+		color: #ff0000;
+		font-weight: 900;
+	}
+	.open-slide a {text-decoration: none;}
+	.side-nav{
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		opacity: 0.9;
+		overflow: hidden;
+		padding-top: 60px;
+		transition: .5s;
+	}
+	.side-nav a{
+		text-decoration: none;
+		padding: 10px 10px 10px 30px;
+		color: #fff;
+		display: block;
+		font-size: 22px;
+		transition: 0.3s;
+	}
+
+	.side-nav .btn-close{
+		font-size: 40px;
+		font-weight: 600;
+		position: absolute;
+		top: 0;
+		right:16px;
+		margin-left: 50px;
+		color: #ff0000;
+	}
+	.book-now{
+		border:none;
+		display: block;
+		width: 100%;
+		position: fixed;
+	  	bottom: 0;
+	  	padding: 18px 0px;
+	  	background-color: #ff0000;
+	  	/*opacity: 0.7;*/
+	  	color: #fff;
+	  	font-size: 18px;
+	  	font-weight: 600;
+	  	text-transform: uppercase;
+	}
+
+	#main{
+		padding-top: 80px;
+		color: #fff;
+		margin: auto;
+		width: 100%;
+	}
+
+	#main .tagline h1{
+		font-family: roboto;
+		text-align: center;
+		font-weight: 400;
+	}
+
+	#main .tagline{
+		margin-top: 100px;
+		vertical-align: middle;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+	.navbar{
+		display: none;
+	}
+
+	.burger-nav{
+		padding: 15px;
+	}
+	.title {
+		color:#fff;
+		display: inline-block;
+		padding-left: 10px;
+		vertical-align: middle;
+	}
+	.title h1{
+		font-family: 'Roboto Condensed';
+		font-weight: 400;
+	}
+	.title h1 strong{
+		color: #ff0000;
+		font-weight: 900;
+	}
+	.open-slide a {text-decoration: none;}
+	.side-nav{
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		opacity: 0.9;
+		overflow: hidden;
+		padding-top: 60px;
+		transition: .5s;
+	}
+	.side-nav a{
+		text-decoration: none;
+		padding: 10px 10px 10px 30px;
+		color: #fff;
+		display: block;
+		font-size: 22px;
+		transition: 0.3s;
+	}
+
+	.side-nav .btn-close{
+		font-size: 40px;
+		font-weight: 600;
+		position: absolute;
+		top: 0;
+		right:16px;
+		margin-left: 50px;
+		color: #ff0000;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+	.navbar a{
+		color: #fff;
+		text-decoration: none;
+		display: inline-block;
+		font-family: 'Roboto Condensed';
+		text-transform: uppercase;
+		font-size: 16px;
+		float: left;
+		border-bottom: 1px solid transparent;
+	}
+
+	.navbar ul li {
+		list-style: none;
+		display: inline-block;
+	}
+	.navbar-nav a:hover{
+		padding-bottom: 4px;
+		margin-bottom: -5px;
+		border-bottom: 2px solid #ff0000;
+		transition: all .3s ease;
+	}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	.burger-nav{display: none;}
+
+	.navbar{
+		display: block;
+		position: fixed;
+		top:20px;
+		right: 160px;
+	}
+
+	#main{
+		display: block;
+		padding-top: 80px;
+		width: 90%;
+		margin:auto;
+	}
+
+	.title {
+		color:#fff;
+		display: inline-block;
+		padding-left: 10px;
+		vertical-align: middle;
+	}
+	#main .title h1{
+		font-family: 'Roboto Condensed';
+		font-weight: 400;
+		font-size: 3.5em;
+		line-height: .8em;
+	}
+	.title h1 strong{
+		color: #ff0000;
+		font-weight: 900;
+	}
+
+	#main h2 {
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 2.1em;
+	}
+	.navbar a{
+		margin: 0px 16px;
+		color: #fff;
+		text-decoration: none;
+		display: inline-block;
+		font-family: 'Roboto Condensed';
+		text-transform: uppercase;
+		font-size: 16px;
+		float: left;
+		border-bottom: 1px solid transparent;
+	}
+
+	.navbar ul li {
+		list-style: none;
+		display: inline-block;
+	}
+	.navbar-nav a:hover{
+		padding-bottom: 4px;
+		margin-bottom: -5px;
+		border-bottom: 2px solid #ff0000;
+		transition: all .3s ease;
+	}
+
+	.book-now{
+		border:none;
+		display: block;
+		width: 18%;
+		position: absolute;
+		bottom: 150px;
+		margin-left: 15px;
+	  	padding: 18px 0px;
+	  	background-color: #ff0000;
+	  	color: #fff;
+	  	font-size: 18px;
+	  	font-weight: 400;
+	  	letter-spacing: .2em;
+	  	text-transform: uppercase;
+	  	border-radius: 25px;
+	}
+
+	.book-now:hover{
+		background-color: rgba(255,0,0, .8);
+		transition: all .5s ease;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+	.burger-nav{display: none;}
+
+	.navbar a{
+		color: #fff;
+		text-decoration: none;
+		display: inline-block;
+		font-family: 'Roboto Condensed';
+		text-transform: uppercase;
+		font-size: 16px;
+		float: left;
+		border-bottom: 1px solid transparent;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.navbar ul li {
+		list-style: none;
+		display: inline-block;
+	}
+	.navbar-nav a:hover{
+		padding-bottom: 4px;
+		margin-bottom: -5px;
+		border-bottom: 2px solid #ff0000;
+		padding-left: 0px;
+		padding-right: 0px;
+		transition: all .3s ease;
+	}
+
+}
