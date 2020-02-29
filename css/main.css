@@ -225,6 +225,20 @@ body{
 		text-transform: uppercase;
 		font-size: 2.1em;
 	}
+
+	#main .tagline h1{
+		font-family: roboto;
+		font-weight: 400;
+		color: #fff;
+		margin-left: 15px;
+		width: 30%;
+	}
+
+	#main .tagline{
+		margin-top: 150px;
+		vertical-align: middle;
+	}
+
 	.navbar a{
 		margin: 0px 16px;
 		color: #fff;
@@ -251,7 +265,7 @@ body{
 	.book-now{
 		border:none;
 		display: block;
-		width: 18%;
+		width: 16%;
 		position: absolute;
 		bottom: 150px;
 		margin-left: 15px;
